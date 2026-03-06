@@ -178,7 +178,13 @@ app.post('/api/trello/cards', async (req, res) => {
   }
 });
 
+// ─── Exports for testing ─────────────────────────────────────────────────────
+
+export { app, buildDescription, extractCards };
+
 // ─── Start ────────────────────────────────────────────────────────────────────
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`TextToTrello running at http://localhost:${PORT}`));
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => console.log(`TextToTrello running at http://localhost:${PORT}`));
+}
