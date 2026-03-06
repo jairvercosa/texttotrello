@@ -57,11 +57,9 @@ The app uses OpenAI models. Edit `server.js` to switch:
 
 | Task | Default | Alternatives |
 |------|---------|--------------|
-| Extraction | `gpt-4.1` | `gpt-4.1-mini`, `gpt-4.1-nano` |
+| Extraction | `gpt-5` | `gpt-5-mini`, `gpt-5-nano` |
 
 Update the `model` field in the `extractCards()` function in `server.js`.
-
-> **Note**: As of the build date, GPT-5 model names (`gpt-5`, `gpt-5-mini`, `gpt-5-nano`) are not yet publicly available via the OpenAI API. The app uses `gpt-4.1` (the latest capable model) as a stand-in. Swap in GPT-5 model strings once they become available.
 
 ## Card Structure
 
