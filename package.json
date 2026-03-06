@@ -1,0 +1,21 @@
+{
+  "name": "texttotrello",
+  "version": "1.0.0",
+  "description": "Convert meeting transcripts and documents into Trello cards using AI",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "242labs",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "openai": "^6.27.0"
+  }
+}
